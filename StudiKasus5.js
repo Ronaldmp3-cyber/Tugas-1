@@ -1,12 +1,16 @@
 const hadir = [true, false, true, true, false, true];
-let jumlahHadir = 0;
+let totalHadir = 0;
+let totalTidakHadir = 0;
 
-hadir.forEach((item, index) => {
-    if (item === true) {
-        console.log(`Peserta ke-${index + 1} hadir`);
-        jumlahHadir++;
+for (let i = 0; i < hadir.length; i++) {
+    if (hadir[i]) {
+        console.log(`Siswa ke-${i + 1} hadir`);
+        totalHadir++;
     } else {
-        console.log(`Peserta ke-${index + 1} tidak hadir`);
+        console.log(`Siswa ke-${i + 1} tidak hadir`);
+        totalTidakHadir++;
     }
-});
-console.log(`Jumlah Peserta Hadir: ${jumlahHadir}`);
+}
+
+console.log("Total Siswa Hadir: " + totalHadir);
+console.log("Total Siswa Tidak Hadir: " + totalTidakHadir);

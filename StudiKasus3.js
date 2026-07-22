@@ -9,7 +9,7 @@ const hero = [
 
 for (let i = 0; i < hero.length; i++) {
     let namaHero = hero[i];
-    if (namaHero.charAt(0).toUpperCase() === "F") {
+    if (namaHero.charAt(0) === "F") {
         console.log(namaHero + " Hero Asasin/Tank Favorit");
     } else {
         console.log (namaHero + " Hero Biasa");

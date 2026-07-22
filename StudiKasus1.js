@@ -7,7 +7,7 @@ for (let i = 0; i < hargaBarang.length; i++) {
     totalBarang += hargaBarang[i];
 }
 
-let statusDiskon = "";
+let statusDiskon
 if (totalBarang > 30000) {
     statusDiskon = "Selamat Anda mendapatkan diskon";
 } else {
